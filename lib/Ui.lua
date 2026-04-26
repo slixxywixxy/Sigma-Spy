@@ -115,9 +115,9 @@ function Ui:FontWasSuccessful()
 	Window:SetTheme("DarkTheme")
 
 	self:ShowModal({
-		"Unfortunately your executor was unable to download the font and therefore switched to the Dark theme",
+		"Unfortunately, your executor was unable to download the font and therefore switched to the Dark theme.",
 		"\nIf you would like to use the ImGui theme, \nplease download the font (assets/ProggyClean.ttf)",
-		"and put put it in your workspace folder\n(Sigma Spy/assets)"
+		"and put it in your workspace folder\n(Sigma Spy/assets)"
 	})
 end
 
@@ -126,7 +126,7 @@ function Ui:LoadReGui()
 	ThemeConfig.TextFont = TextFont
 
 	--// ReGui
-	local PrefabsId = "rbxassetid://" .. ReGui.PrefabsId
+	local PrefabsId = "rbxassetid://85813816708696"
 	ReGui:DefineTheme("SigmaSpy", ThemeConfig)
 	ReGui:Init({
 		Prefabs = InsertService:LoadLocalAsset(PrefabsId)
